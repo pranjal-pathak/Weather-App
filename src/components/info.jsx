@@ -17,7 +17,7 @@
  export const Info = (props)=>{
     return(
         props.result && Object.keys(props.result).length>0 ?  
-        <Box className="box" style={{margin: '3vw 60px'}}>
+        <Box className="box" style={{margin: '3vw 10vw'}}>
 
             <Row style={{fontFamily:'garamond'}}><LocationOn />Location:{props.result.name},{props.result.sys.country}</Row>
             <Row style={{fontFamily:'garamond'}}> <SettingsBrightness/>Temprature:{props.result.main.temp}</Row>
