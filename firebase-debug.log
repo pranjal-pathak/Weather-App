@@ -1,0 +1,47 @@
+[debug] [2023-07-11T11:29:51.655Z] ----------------------------------------------------------------------
+[debug] [2023-07-11T11:29:51.658Z] Command:       /Users/pranjal_pathak/.nvm/versions/node/v18.9.0/bin/node /Users/pranjal_pathak/.nvm/versions/node/v18.9.0/bin/firebase init
+[debug] [2023-07-11T11:29:51.659Z] CLI Version:   12.4.3
+[debug] [2023-07-11T11:29:51.659Z] Platform:      darwin
+[debug] [2023-07-11T11:29:51.660Z] Node Version:  v18.9.0
+[debug] [2023-07-11T11:29:51.678Z] Time:          Tue Jul 11 2023 16:59:51 GMT+0530 (India Standard Time)
+[debug] [2023-07-11T11:29:51.679Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-11T11:29:51.684Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-07-11T11:29:51.767Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-11T11:29:51.767Z] > authorizing via signed-in user (pranjalpathak510@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/pranjal_pathak/Desktop/React_Projects/weather-app
+
+[debug] [2023-07-11T11:29:54.052Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-07-11T11:29:54.052Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-07-11T11:30:32.180Z] > refreshing access token with scopes: []
+[debug] [2023-07-11T11:30:32.182Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-11T11:30:32.182Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-11T11:30:32.486Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-07-11T11:30:32.486Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-11T11:30:32.521Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-07-11T11:30:32.521Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"weather-app","name":"weather-app"}
+[debug] [2023-07-11T11:30:34.023Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-07-11T11:30:34.023Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-07-11T11:30:34.293Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (/Users/pranjal_pathak/.nvm/versions/node/v18.9.0/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/pranjal_pathak/.nvm/versions/node/v18.9.0/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID weather-app. Please try again with a unique project ID.

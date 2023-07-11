@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,21 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.right-box{
+  width: 70%;
+  height: 80%;
+  background-image: linear-gradient(to top, color(srgb-linear 0 0.02 0.01), transparent);
+  text-overflow: "ellipsis";
+  overflow: auto;  
+}
+.serach{
+  vertical-align: bottom;
+  
+}
+
+.box{
+  color: rgb(2, 46, 17);
 }
