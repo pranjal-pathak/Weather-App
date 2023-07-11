@@ -36,3 +36,5 @@ export const Home=()=>{
         </Container>
     )
 }
+
+// adding a check comment to test if github action is running
