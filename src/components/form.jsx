@@ -36,7 +36,7 @@ export const Form = (props)=>{
     }
     return( 
         <Container>
-            <div className="search"><SearchOutlinedIcon fontSize="large" color="disabled"/><Input style={{fontSize:'2vw',fontFamily:'monospace',marginLeft:'10px'}} name="city"  placeholder=" Search for a city" color="black" onChange={(e) =>handleChange(e) } /></div>
+            <div className="search"><SearchOutlinedIcon fontSize="large" color="disabled"/><Input style={{fontSize:'1.5vw',fontFamily:'monospace',marginLeft:'10px'}} name="city"  placeholder=" Search for a city" color="black" onChange={(e) =>handleChange(e) } /></div>
             
             <Button style={{fontSize:'medium' , fontFamily:'monospace' , borderRadius:"10px"}} variant ="outlined" color ="success"  onClick={()=> getWeatherInfo() }>
                 Get Weather

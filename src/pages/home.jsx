@@ -11,7 +11,7 @@ const Container = styled(Box)({
     display: 'flex',
     alignItems: 'center',
     margin: '0 auto',
-    width: '65%',
+    width: '95vw',
 })
 const Image = styled(Box)({
     backgroundImage: `url(${Img})`,
