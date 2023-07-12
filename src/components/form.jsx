@@ -16,9 +16,12 @@ const Container = styled(Box)({
 })
 const Input = styled(InputBase)({
     type:"search",
-    marginRight:'20px',
-    padding:'10px 10px',
-    fontSize: 18,
+    border:'slategray',
+    padding:'3px',
+    margin:2,
+    color:'black',
+    
+    
 
 })
 
@@ -53,9 +56,9 @@ export const Form = (props)=>{
     }
     return(
         <Container>
-            <Search><SearchOutlinedIcon fontSize="large" color="disabled"/><Input style={{fontSize:'1.5vw',fontFamily:'monospace',marginLeft:'10px'}} name="city" value={input} placeholder=" Search for a city" color="black" onChange={(e) =>handleChange(e) } /></Search>
+            <Search><SearchOutlinedIcon fontSize="large" color="disabled"/><Input style={{fontSize:'1.75vw',fontFamily:'monospace',marginLeft:'10px'}} name="city" value={input} placeholder=" Search for a city" color="black" onChange={(e) =>handleChange(e) } /></Search>
             
-            <Button style={{fontSize:'medium' , fontFamily:'monospace' , borderRadius:"10px"}} variant ="outlined" color ="success"  onClick={()=> getWeatherInfo() }>
+            <Button style={{fontSize:'1.5vw' , fontFamily:'monospace' , borderRadius:"10px"}} variant ="outlined" color ="success"  onClick={()=> getWeatherInfo() }>
                 Get Weather
             </Button>
         </Container>
