@@ -10,7 +10,7 @@ export const getWeather = async(city) =>{
     }
     catch(error){
  
-    alert(error.message); 
+    console.log(error.message); 
 }
         
 }

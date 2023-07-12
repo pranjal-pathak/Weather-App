@@ -46,7 +46,9 @@
   overflow: auto;  
 }
 .serach{
-  vertical-align: bottom;
+      display: flex;
+        justify-content: center;
+        align-items: center;
   
 }
 

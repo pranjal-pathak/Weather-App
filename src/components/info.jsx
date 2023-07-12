@@ -3,11 +3,14 @@
  
 
  const Row = styled(Typography)({
-    padding: '10px',
+    marginBottom:'4px',
+    padding:10,
     fontSize: '2vw', 
     '& > svg': {
-        marginRight: 10
-    }  
+        marginRight:5
+    }  ,
+    display:'flex',
+    alignItems:'center',
  });
 
  
@@ -20,15 +23,15 @@
         <Box className="box" style={{margin: '3vw 10vw'}}>
 
             <Row style={{fontFamily:'garamond'}}><LocationOn />Location:{props.result.name},{props.result.sys.country}</Row>
-            <Row style={{fontFamily:'garamond'}}> <SettingsBrightness/>Temprature:{props.result.main.temp}</Row>
+            <Row style={{fontFamily:'garamond'}}> <SettingsBrightness/> Temprature:{props.result.main.temp} </Row>
 
-            <Row style={{fontFamily:'garamond'}}><Opacity />Humidity:{props.result.main.humidity}</Row>
+            <Row style={{fontFamily:'garamond'}}><Opacity /> Humidity:{props.result.main.humidity} </Row>
 
-            <Row style={{fontFamily:'garamond'}}><Brightness5 />Sunrise:{new Date(props.result.sys.sunrise*1000).toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}</Row>
+            <Row style={{fontFamily:'garamond'}}><Brightness5 /> Sunrise:{new Date(props.result.sys.sunrise*1000).toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} </Row>
 
-            <Row style={{fontFamily:'garamond'}}><Brightness6 />Sunset:{new Date(props.result.sys.sunset*1000).toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}</Row>
+            <Row style={{fontFamily:'garamond'}}><Brightness6 /> Sunset:{new Date(props.result.sys.sunset*1000).toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} </Row>
 
-            <Row style={{fontFamily:'garamond'}}><Cloud />Clouds:{props.result.clouds.all}%</Row>
+            <Row style={{fontFamily:'garamond'}}><Cloud /> Clouds:{props.result.clouds.all}% </Row>
 
         </Box>
         : null
