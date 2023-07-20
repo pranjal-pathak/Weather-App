@@ -8,9 +8,9 @@ export const getWeather = async(city) =>{
         let response = await axios.get(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);
         return response.data;
     }
-    catch(error){
- 
-    console.log(error.message); 
+    catch(error)
+    {
+    alert('Please eneter a valid city name'); 
 }
         
 }
